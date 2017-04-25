@@ -1,0 +1,44 @@
+/* Empty. Add your own CSS if you like */
+
+#playcontrols {
+  text-align: center;
+  margin-top: 10%;
+}
+#playcontrols #activityindicator, #playcontrols #stopbutton {
+  display: none;
+}
+    
+#textpositiondiv {
+  margin-top: 100px;
+}
+
+div#timetosleep {
+
+  text-align: center;
+}
+
+div#body_text {
+    text-align: center;
+}
+
+div#footer {
+    text-align: center;
+}
+h1.title_text {
+    margin: 0 auto;
+    font-size: 32px;
+    color: gray;
+    font-weight: normal;
+}
+h1.alarm_message {
+    margin: 15% auto;
+    text-align: center;
+    font-size: 18px;
+    color: gray;
+    font-weight: normal;
+}
+img.logo_image {
+    margin: 8% auto;
+    text-align: center;
+    width: 85%;
+}
