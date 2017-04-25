@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html ng-app="starter">
+  <head>
+    <meta charset="utf-8">
+  
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <style type="text/css">
+  
+    
+  
+  </style>
+  <script type="text/javascript" charset="utf-8" src="scripts/html5audio.js"></script>
+    <title></title>
+
+    <link rel="manifest" href="manifest.json">
+
+    <!-- un-comment this code to enable service worker
+    <script>
+      if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('service-worker.js')
+          .then(() => console.log('service worker installed'))
+          .catch(err => console.log('Error', err));
+      }
+    </script>-->
+
+    <link href="lib/ionic/css/ionic.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
+    <link href="css/ionic.app.css" rel="stylesheet">
+    -->
+
+    <!-- ionic/angularjs js -->
+    <script src="lib/ionic/js/ionic.bundle.js"></script>
+
+    <!-- cordova script (this will be a 404 during development) -->
+    <script src="cordova.js"></script>
+
+    <!-- your app's js -->
+    <script src="js/app.js"></script>
+  </head>
+  <body ng-controller="AudioController">
+
+    <ion-pane>
+    <!--
+      <ion-header-bar class="bar-stable">
+        <h1 class="title">Example HTML5 Audio Streamer app</h1>
+      </ion-header-bar>
+    -->
+ <ion-content >
+ <div class="scroll">
+      <div id="header" style="text-align: center;">
+        <img class = "logo_image" src="img/logo.png" style="width: 85%;">
+      </div>
+      <div id="timetosleep"><h1 class="title_text"> Time to Sleep</h1></div>      
+         <div id="playcontrols">
+      <a href="#" id="playbutton" onclick="html5audio.play();return false;"><img src="img/playbutton.png" style="width: 42%;"></a>
+      <a href="#" id="activityindicator" onclick="html5audio.stop();return false;"><img src="images/activityindicator.gif"></a>
+      <a href="#" id="stopbutton" onclick="html5audio.pause();return false;"><img src="img/pausebutton.png" style="width: 42%;"></a>
+    </div>
+    <div id="body_text"><h1 class="alarm_message"><p>Make sure your headphones<p>
+      <p>are working.<p></h1></div>
+    <div id="footer"><h1 class="title_text">Sleep Well!</h1></div>
+    
+    <script type="text/javascript">
+      playButton = document.getElementById('playbutton');
+      stopButton = document.getElementById('stopbutton');
+      activityIndicator = document.getElementById('activityindicator');
+      textPosition = document.getElementById('textposition');
+    </script>
+      </div>
+    </ion-content>    
+    </ion-pane>
+  </body>
+</html>
